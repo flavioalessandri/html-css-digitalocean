@@ -114,11 +114,27 @@ button>img{
   float: left;
 }
 
-/*......................... SEZIONE 1 CUSTOMERS ...........................*/
-
-.ms_customer img{
-  max-width:50%;
+/*.......... Sezione Customers ...........................*/
+.ms_customer{
+  width: 45%;
+  display: inline-block;
+  vertical-align: middle;
 }
+.ms_customer img{
+  width: 100%;
+  height:auto;
+}
+
+#customers > div >div:nth-of-type(2) >div > div:nth-of-type(odd){
+  border:2px solid red;
+  margin-right: 10px;
+}
+#customers > div >div:nth-of-type(2) >div > div:nth-of-type(even){
+  border:2px solid red;
+  margin-left: 10px;
+}
+
+
 
 
 
@@ -130,29 +146,21 @@ button>img{
 // No media query for `xs` since this is the default in Bootstrap */
 
 
-/* -SM- Small devices (landscape phones, 576px and up) */
-@media all and (min-width: 576px) {
+/* -XS- Small devices (landscape phones, 576px and up) */
+@media all and (min-width: 480px) {
 
 
 }
 
 
-/* -MD- Medium devices (tablets, 768px and up)  */
+/* -SM- Medium devices (tablets, 768px and up)  */
 @media all and (min-width: 768px) {
 
   body{
-    background-color: lightgreen;
+    background-color: orange;
   }
 
-  /* .........PADDING GENERALI............ */
-
-  nav, #jumbotron, section {
-    padding-left: 20px!important;
-    padding-right: 20px!important;
-  }
-
-
-/* ............NAVBAR COLLASSATA (MENU HAMBURGER VISIBILE)............ */
+  /* .....NAVBAR COLLASSATA (MENU HAMBURGER VISIBILE)....... */
   .navbar-header {
     float: none;
   }
@@ -186,20 +194,70 @@ button>img{
     display:block !important;
   }
 
- }
+  /*.......... Sezione Customers ...........................*/
+
+
+  .ms_customer{
+    width: 14%!important;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .ms_customer img{
+    width: 100%!important;
+    height:auto;
+  }
+  #customers > div >div:nth-of-type(2) >div > div:nth-of-type(odd){
+    border:2px solid green;
+    margin-right: 1%;
+    margin-left: 0%;
+  }
+
+  #customers > div >div:nth-of-type(2) >div > div:nth-of-type(even){
+    border:2px solid blue;
+    margin-right: 1%;
+    margin-left: 0%;
+  }
+
+}
 
 
 
-/* -LG- Large devices (desktops, 992px and up) */
+/* -MD- Large devices (desktops, 992px and up) */
 
 @media  all and  (min-width: 992px) {
 
   body{
+    background-color: lightgreen;
+    /* background-image: url(../img/debug_md.jpg); */
+    background-repeat: repeat;
+  }
+
+  /* .........PADDING GENERALI............ */
+
+  nav, #jumbotron, section {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+
+
+}
+/* -LG- Large devices (large desktops, 1200px and up) ........................ */
+
+@media  all and  (min-width: 1200px) {
+
+  body {
+    background-image: url(../img/debug_lg.jpg);
+    background-repeat: repeat;
     background-color: lightgrey;
   }
 
 
-/* .........NAVBAR COMPLETA - LINK VISIBILI E HAMBURGER INVISIBILE - ........ */
+  nav, #jumbotron, section {
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+  }
+
+    /* ....NAVBAR COMPLETA - LINK VISIBILI E HAMBURGER INVISIBILE - . */
 
   .navbar-header {
     float: left;
@@ -212,7 +270,7 @@ button>img{
   /* .........NAVBAR allineamento ITEM centrali........... */
   .nav.navbar-nav:first-of-type {
     float: left!important;
-    padding-left: 4%;
+    padding-left: 5%;
   }
 
   .nav.navbar-nav.navbar-right {
@@ -224,6 +282,11 @@ button>img{
     float: left;
   }
 
+  .navbar-nav > li > a{
+    padding-left:5px;
+    padding-right: 5px;
+  }
+
   .navbar-toggle {
     display: none !important;
   }
@@ -232,28 +295,5 @@ button>img{
    margin-right: 0!important;
  }
 
-}
-
-
-/* -XL- Large devices (large desktops, 1200px and up) ........................ */
-
-@media  all and  (min-width: 1200px) {
-
-  body{
-    background-color: lightblue;
-  }
-
-  /* .........PADDING GENERALI............ */
-
-  nav, #jumbotron, section {
-    padding-left: 10%!important;
-    padding-right: 10%!important;
-  }
-
-  /* .........NAVBAR allineamento ITEM centrali........... */
-  .nav.navbar-nav:first-of-type {
-    float: left!important;
-    padding-left: 8%;
-  }
 
 }
