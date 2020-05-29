@@ -4,15 +4,27 @@ body{
   background-color: orange;
 }
 
-
-
-.navbar-brand img{
-  width:12rem;
+.text-white{
+  color: white;
 }
 
-.navbar-nav>li>a {
+/*......................... NAVBAR ...........................*/
+
+.nav.navbar-nav , .navbar-header{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.navbar-brand img{
+  max-width: 155px;
+
+}
+
+.navbar-nav > li > a {
   font-size: 14px!important;
   color:hsl(221,93%,16%) !important;
+  font-weight: bold;
+  padding:0 10px;
 }
 
 nav button.btn {
@@ -20,6 +32,19 @@ nav button.btn {
   background-color: transparent;
   border: 1px solid #006aff;
   color: #006aff;
+}
+
+
+/*......................... jumbo ...........................*/
+header {
+  margin-top: 90px;
+}
+
+#jumbotron {
+  background-image: url("../img/jumbo.svg");
+  background-position: bottom;
+  background-size: cover;
+
 }
 
 
@@ -85,7 +110,6 @@ nav button.btn {
     display:block !important;
   }
 
-
  }
 
 
@@ -112,16 +136,10 @@ nav button.btn {
     display: block!important;
   }
 
-  .nav > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-  }
-
-/* .........NAVBAR allineamento ITEM centrali........... */
+  /* .........NAVBAR allineamento ITEM centrali........... */
   .nav.navbar-nav:first-of-type {
     float: left!important;
-    padding-left: 5%;
+    padding-left: 4%;
   }
 
   .nav.navbar-nav.navbar-right {
