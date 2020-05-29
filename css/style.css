@@ -2,11 +2,59 @@
 body{
   font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
   background-color: orange;
+  font-size: 1rem;
+  line-height: 3rem;
+  color:
 }
 
+/*
+..............COLORI................................. */
+.text-primary{
+  color: #0069ff;
+}
 .text-white{
   color: white;
 }
+
+.text-secondary{
+  color:color:#031b4e;
+}
+
+.bg-primary{
+  background-color: #0069ff;
+}
+.bg-white{
+  background-color: white;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 5em;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+p {
+  font-size: 2.1em;
+  color: #5b6987;
+}
+
+.small {
+  font-size: 1.1em;
+}
+
+
+
 
 /*......................... NAVBAR ...........................*/
 
@@ -21,7 +69,7 @@ body{
 }
 
 .navbar-nav > li > a {
-  font-size: 14px!important;
+  font-size: 1.25em!important;
   color:hsl(221,93%,16%) !important;
   font-weight: bold;
   padding:0 10px;
@@ -42,15 +90,35 @@ header {
 
 #jumbotron {
   background-image: url("../img/jumbo.svg");
-  background-position: bottom;
+  position: relative;
   background-size: cover;
-
+  background-position: bottom center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height:200px;
 }
 
+.jumbo_content.my_card{
+  border:1px solid black;
+  background-color: white;
+  border-radius: 15px;
+  padding:0 40px;
+}
 
+.form-group .btn , .form-group input {
+  width:100%;
+}
 
+button>img{
+  width:20px;
+  float: left;
+}
 
+/*......................... SEZIONE 1 CUSTOMERS ...........................*/
 
+.ms_customer img{
+  max-width:50%;
+}
 
 
 
@@ -75,6 +143,14 @@ header {
   body{
     background-color: lightgreen;
   }
+
+  /* .........PADDING GENERALI............ */
+
+  nav, #jumbotron, section {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+  }
+
 
 /* ............NAVBAR COLLASSATA (MENU HAMBURGER VISIBILE)............ */
   .navbar-header {
@@ -122,11 +198,8 @@ header {
     background-color: lightgrey;
   }
 
-/* .........NAVBAR COMPLETA (MENU HAMBURGER INVISIBILE)............ */
 
-  nav {
-    padding: 0 70px;
-  }
+/* .........NAVBAR COMPLETA - LINK VISIBILI E HAMBURGER INVISIBILE - ........ */
 
   .navbar-header {
     float: left;
@@ -154,6 +227,11 @@ header {
   .navbar-toggle {
     display: none !important;
   }
+
+ .navbar-right {
+   margin-right: 0!important;
+ }
+
 }
 
 
@@ -164,4 +242,18 @@ header {
   body{
     background-color: lightblue;
   }
+
+  /* .........PADDING GENERALI............ */
+
+  nav, #jumbotron, section {
+    padding-left: 10%!important;
+    padding-right: 10%!important;
+  }
+
+  /* .........NAVBAR allineamento ITEM centrali........... */
+  .nav.navbar-nav:first-of-type {
+    float: left!important;
+    padding-left: 8%;
+  }
+
 }
