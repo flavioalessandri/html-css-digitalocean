@@ -1,14 +1,19 @@
 
-body{
-  font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
-  background-color: orange;
-  font-size: 1rem;
-  line-height: 3rem;
-  color:
+*{
+  margin:0
+  padding:0
 }
 
-/*
-..............COLORI................................. */
+
+body{
+  font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
+  /* background-color: orange; */
+  font-size: 1rem;
+  line-height: 3rem;
+  color:rgba(3, 27, 78, 0.6);
+}
+
+/*..............COLORI GENERALI............................... */
 .text-primary{
   color: #0069ff;
 }
@@ -16,8 +21,8 @@ body{
   color: white;
 }
 
-.text-secondary{
-  color:color:#031b4e;
+.text-dark{
+  color:#031b4e;
 }
 
 .bg-primary{
@@ -27,6 +32,20 @@ body{
   background-color: white;
 }
 
+section#customers , section#dev_carousel , section#team_carousel {
+  background-color:#f3f5f9;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section#features , section#deploy {
+  background-color:white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*.............FONT GENERALI............................... */
+
 h1{
   font-weight: bold;
   font-size: 5em;
@@ -34,27 +53,38 @@ h1{
 
 h2{
   font-weight: bold;
-  font-size: 3em;
-  line-height: 1em;
 }
 
 h3{
   font-weight: bold;
-  font-size: 2em;
-  line-height: 1em;
+  font-size: 3em;
 }
 
+h5{
+  font-weight: bold;
+  font-size: 2.2em;
+  color: #031b4e;
+}
+
+h6{
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+
 p {
-  font-size: 2.1em;
-  color: #5b6987;
+  font-size: 2em;
 }
 
 .small {
-  font-size: 1.1em;
+  font-size: 1.4em;
+  line-height: 1.5em;
 }
 
 
-
+#features h2 , #service h2 , #dev_carousel h2 , #account h2 {
+  padding-bottom: 30px;
+}
 
 /*......................... NAVBAR ...........................*/
 
@@ -99,7 +129,7 @@ header {
 }
 
 .jumbo_content.my_card{
-  border:1px solid black;
+  border:1px solid #031b4e;
   background-color: white;
   border-radius: 15px;
   padding:0 40px;
@@ -114,7 +144,7 @@ button>img{
   float: left;
 }
 
-/*.......... Sezione Customers ...........................*/
+/*.......... Sezione 1 Customers ...........................*/
 .ms_customer{
   width: 45%;
   display: inline-block;
@@ -125,17 +155,197 @@ button>img{
   height:auto;
 }
 
+/*.......... margini immagini in mediaquery XS............*/
+
 #customers > div >div:nth-of-type(2) >div > div:nth-of-type(odd){
-  border:2px solid red;
   margin-right: 10px;
 }
 #customers > div >div:nth-of-type(2) >div > div:nth-of-type(even){
-  border:2px solid red;
   margin-left: 10px;
 }
 
 
+/*.......... Sezione 2 Deploy ...........................*/
 
+#deploy #sidenav ul>li>a{
+  border-left: 2px solid;
+  font-size: 2em;
+  height:auto;
+}
+
+#deploy .ms_icon img{
+  min-height:50px;
+}
+
+
+#deploy .ms_title p{
+  margin-bottom: 90px;
+}
+
+/*.......... Sezione 3 Carousel ...........................*/
+
+.ms_carousel_img img{
+  width:80%;
+  height:auto;
+}
+
+.ms_carousel_img i:first-of-type {
+ font-size: 5em;
+ color:rgba(3, 27, 78, 0.6);
+ padding-right:40px;
+
+}
+
+.ms_carousel_img i:last-of-type{
+ font-size: 5em;
+ color:#031b4e;
+ padding-left:40px;
+}
+
+
+/*.......... Personalizzazione dei 3 bottoni ..........*/
+
+.ms_carousel_button .radio-inline{
+  padding-left: 0;
+}
+
+.ms_carousel_button {
+  padding: 20px;
+}
+/* First hide radios */
+.ms_carousel_button input[type="radio"] {
+  display: none;
+}
+/* Generate new radio buttons, which we can style via css */
+.ms_carousel_button label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #006aff;
+  background-color: transparent;
+  text-align: center;
+  line-height: 15px;
+}
+/* Applying styles when checking the buttons */
+/* seleziona e COLORA ogni label PRECEDUTO da un elemento input di tipo radio che è checked */
+
+.ms_carousel_button input[type="radio"]:checked ~ label:before {
+  background-color: #006aff;
+  border-color: #006aff;
+}
+.ms_carousel_button label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+/* HOVER */
+/* On mouse-over, add a grey background color */
+.ms_carousel_button .radio-inline:hover input ~ label:before {
+  border: 2px solid rgba(3, 27, 78, 0.6);
+}
+
+
+
+
+/*.......... Sezione 4 featuers ...........................*/
+
+
+#features .ms_icon {
+ min-height:60px;
+}
+
+/*.......... Sezione 5 TABELLA ...........................*/
+
+#service , #account{
+  padding: 60px 0;
+  background-image:linear-gradient(#0044c2, #001f9a) ;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+
+
+/*.......... stile TABELLA ...........................*/
+
+tbody{
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.table > thead > tr > th{
+  border: 0;
+}
+
+.table > tbody > tr > td{
+  color: white;
+  border-top: 0;
+  border-bottom: 1px solid white;
+}
+
+.table > tbody > tr > td:nth-of-type(2){
+  color: rgba(255,255,255,0.6);
+  border-top: 0;
+  border-bottom: 1px solid white;
+}
+
+.table > tbody > tr:last-of-type > td{
+  border-bottom: 0;
+}
+
+
+.table > tbody > tr > td a{
+  color:#00d0d0;
+}
+
+
+/*.......... svg Social ...........................*/
+
+
+
+#footer_link .ms_logo:first-of-type img{
+  height: 40px;
+}
+
+#footer_link .ms_logo:not(:first-of-type){
+  display: inline-block;
+  padding-right: 10px;
+}
+
+#footer_link .ms_logo:not(:first-of-type) img{
+  height: 20px;
+  filter: invert(1);
+  opacity: 0.6;
+}
+
+#footer_link p, #footer_link a , #footer_link span{
+  font-size: 1.5em;
+}
+
+#footer_link span:last-of-type{
+  display: block;
+  color: rgba(255,255,255,0.3);
+  padding-bottom:10px;
+  line-height: 5px;
+}
+
+#footer_link{
+  background-color: #031c4e;
+  color: rgba(255,255,255,0.6);
+}
+
+#footer_link .ms_list> ul{
+  list-style: none;
+  padding:0;
+}
+
+#footer_link .ms_list> ul>li>a{
+  display: block;
+  color: rgba(255,255,255,0.6);
+}
 
 
 
@@ -157,7 +367,7 @@ button>img{
 @media all and (min-width: 768px) {
 
   body{
-    background-color: orange;
+    /* background-color: pink; */
   }
 
   /* .....NAVBAR COLLASSATA (MENU HAMBURGER VISIBILE)....... */
@@ -206,16 +416,13 @@ button>img{
     width: 100%!important;
     height:auto;
   }
-  #customers > div >div:nth-of-type(2) >div > div:nth-of-type(odd){
-    border:2px solid green;
-    margin-right: 1%;
-    margin-left: 0%;
+  #customers > div >div:nth-of-type(2) >div > div{
+    margin-right: 0;
+    margin-left: 2%;
   }
 
-  #customers > div >div:nth-of-type(2) >div > div:nth-of-type(even){
-    border:2px solid blue;
-    margin-right: 1%;
-    margin-left: 0%;
+  #customers > div >div:nth-of-type(2) >div > div:first-of-type{
+    margin-left: 0px;
   }
 
 }
@@ -227,7 +434,7 @@ button>img{
 @media  all and  (min-width: 992px) {
 
   body{
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     /* background-image: url(../img/debug_md.jpg); */
     background-repeat: repeat;
   }
@@ -246,7 +453,7 @@ button>img{
 @media  all and  (min-width: 1200px) {
 
   body {
-    background-image: url(../img/debug_lg.jpg);
+    /* background-image: url(../img/debug_lg.jpg); */
     background-repeat: repeat;
     background-color: lightgrey;
   }

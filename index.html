@@ -78,7 +78,7 @@
                   </ul>
                 </li>
                 <li><a href="#">Login</a></li>
-                <button type="button" class="btn btn-outline-primary">Sign up</button>
+                <li><button type="button" class="btn btn-outline-primary">Sign up</button></li>
 
               </ul>    <!--  NAV NAVBAR-RIGHT   -->
 
@@ -110,7 +110,7 @@
             <!-- Header Jumbotron Second Column - FORM -->
             <div class="col-xs-12 col-md-6">
               <div class="jumbo_content my_card text-center">
-                <h2 >Deploy your app in seconds</h2>
+                <h2 class="text-dark">Deploy your app in seconds</h2>
                 <h2 class="text-primary">Get Started Now</h2>
                 <!-- AGGIUNGERE FORM -->
 
@@ -125,9 +125,11 @@
                 </div>
                 <div class="form-group">
                   <button type="button" class="form-control text-primary bg-white">
-                    <img src="img/google-logo.png">Singup with Google</button>
+                    <img src="img/google-logo.png" alt="Google">Singup with Google</button>
                 </div>
-                <p class="small">By signing up you agree with <a href="#">the Terms of Use</a></p>
+                <p class="small">By signing up you agree with
+                  <a href="#">the Terms of Use</a>
+                </p>
 
 
               </div>
@@ -195,30 +197,33 @@
 
       <!-- Main - Second Section - Deploy .................................... -->
 
-      <section id="deploy" class="">
-        <div class="container-fluid text-center">
+      <section id="deploy" class="text-left">
+        <div class="container-fluid">
 
           <!-- Main - Second Section - Deploy - Title -->
           <div class="row">
             <div class="col-xs-12">
-              <div class="ms_title">
-                <h2>Deploy and scale Customers</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="ms_title text-center">
+                <h2 class="text-dark">Deploy and scale Customers</h2>
+                <p>Our optimized configuration process saves your team time when running and scaling distributed application AI & machine learning workloads,  hosted services, client websites or CI/CD environments</p>
               </div>
             </div>
           </div> <!-- Row End -->
 
-          <!-- Main - Second Section - Deploy - Aside -->
-          <div class="row">
+          <!-- Main - Second Section - Deploy - NAV -->
 
+
+          <div class="row">
             <div class="col-xs-12 col-md-6">
-              <aside class="ms_title">
-                <button type="button" name="button">Bottone</button>
-                <button type="button" name="button">Bottone</button>
-                <button type="button" name="button">Bottone</button>
-                <button type="button" name="button">Bottone</button>
-                <button type="button" name="button">Bottone</button>
-              </aside>
+              <div id="sidenav">
+                <ul class="nav">
+                  <li><a class="" href="#">Deploy</a></li>
+                  <li><a class="" href="#">Scale</a></li>
+                  <li><a class="" href="#">Store</a></li>
+                  <li><a class="" href="#">Secure</a></li>
+                  <li><a class="" href="#">Monitor</a></li>
+                </ul>
+              </div>
             </div>
 
             <!-- Main - Second Section - Deploy - Neasted -->
@@ -229,34 +234,33 @@
                 <div class="col-xs-12 col-md-6">
                   <div class="ms_content">
                     <div class="ms_icon">
-                      <img src="" alt="Cluster">
+                      <img src="img/ico1.svg" alt="Cluster">
                     </div>
-                    <h3>Cluster</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no
-                    </p>
+                    <h5>Cluster</h5>
+                    <p class="small"> Prevision Multiple Droplets (virtual machine) in seconds with our control panel CLI, or direcly against our API</p>
                   </div>
                 </div>
 
                 <div class="col-xs-12 col-md-6">
                   <div class="ms_content">
                     <div class="ms_icon">
-                      <img src="" alt="Optimized">
+                      <img src="img/ico2.svg" alt="Optimized">
                     </div>
-                    <h3>Optimized</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no
-                    </p>
+                    <h5>Optimized</h5>
+                    <p class="small">Get the compute resources you needs with Standard or Optimized Droplets</p>
                   </div>
                 </div>
               </div> <!-- First Nested Row End -->
 
               <div class="row">
+
                 <div class="col-xs-12 col-md-6">
                   <div class="ms_content">
                     <div class="ms_icon">
-                      <img src="" alt="One Click App">
+                      <img src="img/ico3.svg" alt="One Click App">
                     </div>
-                    <h3>One Click App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no
+                    <h5>One Click App</h5>
+                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no
                     </p>
                   </div>
                 </div>
@@ -264,45 +268,70 @@
                 <div class="col-xs-12 col-md-6">
                   <div class="ms_content">
                     <div class="ms_icon">
-                      <img src="" alt="Global">
+                      <img src="img/ico4.svg" alt="Global">
                     </div>
-                    <h3>Global Avaiability</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no
+                    <h5>Global Avaiability</h5>
+                    <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis no
                     </p>
                   </div>
                 </div>
 
-            </div> <!-- Second Nested Row End -->
+              </div> <!-- Second Nested Row End -->
+
+            </div> <!-- col Nested End -->
 
           </div> <!--  Main Row End -->
+
 
         </div> <!-- Container-fluid End -->
       </section>
 
       <!-- Main - Third Section - Dev_carousel .................................... -->
 
-      <section id="dev_carousel" class="">
+      <section id="dev_carousel" class="carousel">
 
         <div class="container-fluid text-center">
+
           <div class="row">
             <div class="col-xs-12">
-              <h2>Designed for Developers</h2>
+              <h2 class="text-dark">Designed for Developers</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor i
               </p>
             </div>
           </div> <!--  Main Row End -->
 
           <div class="row">
-            <div class="ms_carousel">
-              <img src="" alt="Carousel">
-              <h4>Create Compute server in 55 second or less</h4>
-              <div class="ms_carousel_button">
-                <button type="button" name="button">bottone</button>
-                <button type="button" name="button">bottone</button>
-                <button type="button" name="button">bottone</button>
-                <button type="button" name="button">bottone</button>
+            <div class="col-xs-12">
+              <div class="ms_carousel">
+                <div class="ms_carousel_img">
+                  <i class="fas fa-chevron-left"></i>
+                  <img src="img/carousel-img.jpg" alt="Carousel">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <h4>Create Compute server in 55 second or less</h4>
+
+
+                <!-- Personalizzazione dei 3 bottoni  -->
+
+                <div class="ms_carousel_button">
+                  <div class="radio-inline">
+                    <input type="radio" name="ms_button" id="button01">
+                    <label for="button01" ></label>
+                  </div>
+                  <div class="radio-inline">
+                    <input type="radio" name="ms_button" id="button02">
+                    <label for="button02"></label>
+                  </div>
+                  <div class="radio-inline">
+                    <input type="radio" name="ms_button" id="button03">
+                    <label for="button03"></label>
+                  </div>
+                </div>
+
               </div>
             </div>
+
           </div> <!--  Main Row End -->
 
         </div> <!-- Container-fluid End -->
@@ -312,12 +341,12 @@
       <!-- Main - Fourth Section - Features -->
       <section id="features" class="">
 
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-left">
 
           <!-- Main - Fourth Section - Features - Title -->
           <div class="row">
             <div class="col-xs-12">
-              <h2>The featuers your business needs</h2>
+              <h2 class="text-dark text-center">The features your business needs</h2>
             </div>
           </div> <!--  Main Row End -->
 
@@ -325,28 +354,28 @@
           <div class="row">
             <div class="col-xs-12 col-md-4">
               <div class="ms_features">
-                <img src="" alt="feature01">
-                <h3>Praticable Pricing</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</p>
-                <a href="#">Pricing</a>
+                <img class="ms_icon" src="img/ico5.svg" alt="Pricing">
+                <h5>Praticable Pricing</h5>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</p>
+                <a class="small" href="#">Pricing &gt;</a>
               </div>
             </div>
 
             <div class="col-xs-12 col-md-4">
               <div class="ms_features">
-                <img src="" alt="feature01">
-                <h3>World-Class Service</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</p>
-                <a href="#">Support</a>
+                <img class="ms_icon" src="img/ico6.svg" alt="service">
+                <h5>World-Class Service</h5>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</p>
+                <a class="small" href="#">Support &gt;</a>
               </div>
             </div>
 
             <div class="col-xs-12 col-md-4">
               <div class="ms_features">
-                <img src="" alt="feature01">
-                <h3>Reliable Platform</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</p>
-                <a href="#">Security</a>
+                <img class="ms_icon" src="img/ico7.svg" alt="service">
+                <h5>Reliable Platform</h5>
+                <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis n</p>
+                <a class="small" href="#">Security &gt;</a>
               </div>
             </div>
 
@@ -369,68 +398,158 @@
           <!-- Main - Fifth  Section - Service- Title -->
           <div class="row">
             <div class="col-xs-12">
-              <h2>Service your customers around the world</h2>
+              <h2 class="text-white">Service your customers around the world</h2>
             </div>
           </div> <!--  Main Row End -->
 
-          <!-- Main - Fifth  Section - Service- Tables -->
+
           <div class="row">
 
             <div class="col-xs-12 col-md-6">
-              <div class="ms_table">
-                <ul>
-                  <li>
-                    <span>AMS2</span>
-                    <span>Amsterdam Netherlands</span>
-                    <a href="#">Test Speed</a>
-                  </li>
-                  <li>
-                    <span>AMS2</span>
-                    <span>Amsterdam Netherlands</span>
-                    <a href="#">Test Speed</a>
-                  </li>
-                  <li>
-                    <span>AMS2</span>
-                    <span>Amsterdam Netherlands</span>
-                    <a href="#">Test Speed</a>
-                  </li>
-                </ul>
-              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="code" scope="col"></th>
+                    <th class="name" scope="col"></th>
+                    <th class="test" scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left text-white"><strong>AMS2</strong></td>
+                    <td class="text-left ">Amsterdam, Netherlands</td>
+                    <td><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>AMS2</strong></td>
+                    <td class="text-left ">Amsterdam, Netherlands</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>AMS3</strong></td>
+                    <td class="text-left ">Amsterdam, Netherlands</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>BLR1</strong></td>
+                    <td class="text-left ">Bangalore, India</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>FRA1</strong></td>
+                    <td class="text-left ">Frankfurt, German</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>LON1</strong></td>
+                    <td class="text-left ">London, UK</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>NYC1</strong></td>
+                    <td class="text-left ">New York, USA</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <div class="col-xs-12 col-md-6">
-              <div class="ms_table">
-                <ul>
-                  <li>
-                    <span>AMS2</span>
-                    <span>Amsterdam Netherlands</span>
-                    <a href="#">Test Speed</a>
-                  </li>
-                  <li>
-                    <span>AMS2</span>
-                    <span>Amsterdam Netherlands</span>
-                    <a href="#">Test Speed</a>
-                  </li>
-                  <li>
-                    <span>AMS2</span>
-                    <span>Amsterdam Netherlands</span>
-                    <a href="#">Test Speed</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="code" scope="col"></th>
+                    <th class="name" scope="col"></th>
+                    <th class="test" scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-left text-white"><strong>AMS2</strong></td>
+                    <td class="text-left ">Amsterdam, Netherlands</td>
+                    <td><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>AMS2</strong></td>
+                    <td class="text-left ">Amsterdam, Netherlands</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>AMS3</strong></td>
+                    <td class="text-left ">Amsterdam, Netherlands</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>BLR1</strong></td>
+                    <td class="text-left ">Bangalore, India</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>FRA1</strong></td>
+                    <td class="text-left ">Frankfurt, German</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>LON1</strong></td>
+                    <td class="text-left ">London, UK</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                  <tr>
+                    <td class="text-left text-white"><strong>NYC1</strong></td>
+                    <td class="text-left ">New York, USA</td>
+                    <td ><a class="text-right" href="#">Test Speed &gt;</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> <!--  COL End -->
 
-          </div> <!--  Main Row End -->
+          </div> <!--  Row End -->
 
         </div> <!-- Container-fluid End -->
 
       </section>
 
       <!-- Main - Sixth  Section - Team Carousel .................................... -->
-      <section id="team_carousel" class="">
+      <section id="team_carousel" class="carousel">
+        <div class="container-fluid text-center">
 
-        <h2>COPIARE STILE DI SEZIONE CAROUSEL con CONTAINER-FLUID E ROW</h2>
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-dark">Development teams love DigitalOcean</h2>
+            </div>
+          </div> <!--  Main Row End -->
 
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="ms_carousel">
+                <div class="ms_carousel_img">
+                  <i class="fas fa-chevron-left"></i>
+                  <img src="img/carousel-img.jpg" alt="Carousel">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <!-- Personalizzazione dei 3 bottoni  -->
+
+                <div class="ms_carousel_button">
+                  <div class="radio-inline">
+                    <input type="radio" name="ms_button" id="button04">
+                    <label for="button04" ></label>
+                  </div>
+                  <div class="radio-inline">
+                    <input type="radio" name="ms_button" id="button05">
+                    <label for="button05"></label>
+                  </div>
+                  <div class="radio-inline">
+                    <input type="radio" name="ms_button" id="button06">
+                    <label for="button06"></label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div> <!--  Main Row End -->
+
+        </div> <!-- Container-fluid End -->
       </section>
 
     </main>
@@ -441,8 +560,8 @@
         <div class="container-fluid text-center">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Get Started Now</h2>
-              <button type="button" name="button">Bottone</button>
+              <h2 class="text-white">Get Started Now</h2>
+              <button type="button" class=" btn text-primary bg-white">Create your account</button>
             </div>
           </div> <!--  Main Row End -->
         </div> <!-- Container-fluid End -->
@@ -459,17 +578,36 @@
 
             <div class="col-xs-12 col-lg-4">
               <div class="ms_logo">
-                <img src="" alt="Logo">
-                <p>DigitalOcean all right reserved eccc</p>
-                <p>Proudly made in NY</p>
+                <img src="img/logo-mark.svg" alt="Logo">
+                <div class="">
+                  <span>&copy; 2018 DigitalOcean, LCC. all rights reserved</span>
+                  <span>Proudly made in NY</span>
+                </div>
+
+
+              </div>
+              <div class="ms_logo">
+                <img src="img/twitter.svg" alt="twitter">
+              </div>
+              <div class="ms_logo">
+                <img src="img/facebook.svg" alt="facebook">
+              </div>
+              <div class="ms_logo">
+                <img src="img/instagram.svg" alt="instagram">
+              </div>
+              <div class="ms_logo">
+                <img src="img/youtube.svg" alt="youtube">
+              </div>
+              <div class="ms_logo">
+                <img src="img/linkedin.svg" alt="linkedin">
               </div>
             </div>
 
             <!-- FOOTER - Second Section - ListL -->
             <div class="col-xs-12 col-md-6 col-lg-2">
               <div class="ms_list">
+                <h6 class="text-white">Company</h6>
                 <ul>
-                  <li> <a href="#">Company</a> </li>
                   <li> <a href="#">About</a> </li>
                   <li> <a href="#">Leadership</a> </li>
                   <li> <a href="#">Link</a> </li>
@@ -486,8 +624,8 @@
 
             <div class="col-xs-12 col-md-6 col-lg-2">
               <div class="ms_list">
+                <h6 class="text-white">Products</h6>
                 <ul>
-                  <li> <a href="#">Products</a> </li>
                   <li> <a href="#">About</a> </li>
                   <li> <a href="#">Leadership</a> </li>
                   <li> <a href="#">Link</a> </li>
@@ -507,8 +645,8 @@
 
             <div class="col-xs-12 col-md-6 col-lg-2">
               <div class="ms_list">
+                <h6 class="text-white">Community</h6>
                 <ul>
-                  <li> <a href="#">Community</a> </li>
                   <li> <a href="#">About</a> </li>
                   <li> <a href="#">Leadership</a> </li>
                   <li> <a href="#">Link</a> </li>
@@ -525,8 +663,8 @@
 
             <div class="col-xs-12 col-md-6 col-lg-2">
               <div class="ms_list">
+                <h6 class="text-white">Support</h6>
                 <ul>
-                  <li> <a href="#">Support</a> </li>
                   <li> <a href="#">Contact Support</a> </li>
                   <li> <a href="#">FAQ</a> </li>
                   <li> <a href="#">Link</a> </li>
