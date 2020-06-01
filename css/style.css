@@ -11,6 +11,7 @@ body{
   font-size: 1rem;
   line-height: 3rem;
   color:rgba(3, 27, 78, 0.6);
+  font-weight: 600;
 }
 
 /*..............COLORI GENERALI............................... */
@@ -21,7 +22,15 @@ body{
   color: white;
 }
 
-.text-dark{
+.text-grey{
+  color: #7b88a2;
+}
+
+.text-lightgrey{
+  color: #abc2ff;
+}
+
+.text-darkblue{
   color:#031b4e;
 }
 
@@ -32,10 +41,16 @@ body{
   background-color: white;
 }
 
-section#customers , section#dev_carousel , section#team_carousel {
+section#dev_carousel , section#team_carousel {
   background-color:#f3f5f9;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+section#customers {
+  background-color:#f3f5f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 section#features , section#deploy {
@@ -47,37 +62,41 @@ section#features , section#deploy {
 /*.............FONT GENERALI............................... */
 
 h1{
-  font-weight: bold;
-  font-size: 5em;
+  font-size: 58px;
+  font-weight: 700;
 }
 
 h2{
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 h3{
-  font-weight: bold;
-  font-size: 3em;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 h5{
-  font-weight: bold;
-  font-size: 2.2em;
-  color: #031b4e;
+  font-size: 23px;
+  font-weight: 700;
 }
 
 h6{
-  font-weight: bold;
-  font-size: 1.8em;
+  font-size: 18px;
 }
 
 
 p {
-  font-size: 2em;
+  font-size: 25px;
 }
 
-.small {
-  font-size: 1.4em;
+.txt_small {
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.txt_extra_small {
+  font-size: 16px;
   line-height: 1.5em;
 }
 
@@ -95,13 +114,11 @@ p {
 
 .navbar-brand img{
   max-width: 155px;
-
 }
 
 .navbar-nav > li > a {
-  font-size: 1.25em!important;
+  font-size: 16px!important;
   color:hsl(221,93%,16%) !important;
-  font-weight: bold;
   padding:0 10px;
 }
 
@@ -111,6 +128,17 @@ nav button.btn {
   border: 1px solid #006aff;
   color: #006aff;
 }
+
+.navbar-header .fa-bars {
+  font-size: 20px!important;
+  color: #006aff;
+}
+
+.navbar-toggle {
+  padding:0 10px;
+  border: none;
+}
+
 
 
 /*......................... jumbo ...........................*/
@@ -131,12 +159,22 @@ header {
 .jumbo_content.my_card{
   border:1px solid #031b4e;
   background-color: white;
-  border-radius: 15px;
-  padding:0 40px;
+  border-radius: 5px;
+  padding:40px 20px;
+  margin-left:0px;
+}
+
+
+#jumbotron p a{
+  text-decoration: underline;
 }
 
 .form-group .btn , .form-group input {
   width:100%;
+}
+
+.form-control::placeholder{
+  color:hsl(221,93%,16%);
 }
 
 button>img{
@@ -167,9 +205,9 @@ button>img{
 
 /*.......... Sezione 2 Deploy ...........................*/
 
-#deploy #sidenav ul>li>a{
+#deploy #sidenav ul> li > a{
   border-left: 2px solid;
-  font-size: 2em;
+  font-size: 26px;
   height:auto;
 }
 
@@ -182,9 +220,19 @@ button>img{
   margin-bottom: 90px;
 }
 
+#deploy .ms_content p{
+  margin-bottom: 50px;
+}
+
+#deploy #sidenav {
+  padding-bottom:50px;
+}
+
 /*.......... Sezione 3 Carousel ...........................*/
 
 .ms_carousel_img img{
+  padding-top: 60px;
+  padding-bottom: 30px;
   width:80%;
   height:auto;
 }
@@ -223,7 +271,7 @@ button>img{
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid #006aff;
+  border: 4px solid #006aff;
   background-color: transparent;
   text-align: center;
   line-height: 15px;
@@ -304,7 +352,12 @@ tbody{
 
 /*.......... svg Social ...........................*/
 
-
+#footer_link{
+  background-color: #031c4e;
+  color: rgba(255,255,255,0.6);
+  padding-top:60px;
+  padding-bottom:60px;
+}
 
 #footer_link .ms_logo:first-of-type img{
   height: 40px;
@@ -332,11 +385,6 @@ tbody{
   line-height: 5px;
 }
 
-#footer_link{
-  background-color: #031c4e;
-  color: rgba(255,255,255,0.6);
-}
-
 #footer_link .ms_list> ul{
   list-style: none;
   padding:0;
@@ -347,18 +395,31 @@ tbody{
   color: rgba(255,255,255,0.6);
 }
 
+/* HOVER.......................... */
 
+/* hover su icone social... */
+#footer_link .ms_logo:not(:first-of-type):hover img{
+  height: 20px;
+  filter: invert(1);
+  opacity: 1;
+}
+
+/* hover su lista... */
+#footer_link .ms_list > ul>li:hover >a{
+  display: block;
+  text-decoration: none;
+  color: rgba(255,255,255,1);
+}
 
 /* ..........................................MEDIA QUERIES................... */
 
+ /* Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
 
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
 
+/* -XS- Small devices (landscape phones, 576px and up)/*
 
-/* -XS- Small devices (landscape phones, 576px and up) */
 @media all and (min-width: 480px) {
-
 
 }
 
@@ -425,6 +486,8 @@ tbody{
     margin-left: 0px;
   }
 
+
+
 }
 
 
@@ -444,6 +507,10 @@ tbody{
   nav, #jumbotron, section {
     padding-left: 20px!important;
     padding-right: 20px!important;
+  }
+
+  .jumbo_content.my_card{
+    margin-left:50px;
   }
 
 
@@ -477,7 +544,7 @@ tbody{
   /* .........NAVBAR allineamento ITEM centrali........... */
   .nav.navbar-nav:first-of-type {
     float: left!important;
-    padding-left: 5%;
+    padding-left: 10%;
   }
 
   .nav.navbar-nav.navbar-right {
@@ -501,6 +568,23 @@ tbody{
  .navbar-right {
    margin-right: 0!important;
  }
+
+ .navbar-nav> li:hover  > a{
+   color: #006aff!important;
+ }
+
+ .dropdown-menu{
+   top:90px;
+   position: fixed;
+   width: 100%;
+   padding:0 10%;
+  }
+
+.dropdown-menu > li > a{
+   color: #006aff!important;
+ }
+
+
 
 
 }
