@@ -577,12 +577,65 @@ tbody{
    top:90px;
    position: fixed;
    width: 100%;
-   padding:0 10%;
+   padding:30px 10%;
   }
 
 .dropdown-menu > li > a{
    color: #006aff!important;
  }
+
+
+  /* .........AGGIUNTE NAVBAR........... */
+
+  .dropdown-menu > li > ul > li{
+    list-style: none;
+    padding-bottom: 20px;
+  }
+
+
+  .dropdown-menu ul.submenu > li > ul{
+    margin-left:0;
+    padding-left: 20px;
+  }
+
+  .dropdown-menu .submenu  li{
+    list-style: none;
+    padding-left: 0;
+  }
+
+
+  .dropdown img.ms_drp_menu {
+    float: left;
+    margin-right:10px;
+    width:45px;
+  }
+
+
+  .dropdown-menu h2.ms_drp_menu  {
+    font-size: 19px!important;
+    margin-top: 0;
+  }
+
+
+  .dropdown-menu h3.ms_drp_menu {
+    font-size: 19px!important;
+    margin-top: 0;
+    margin-bottom: 2px;
+
+  }
+
+  .dropdown-menu p.ms_drp_menu {
+     font-size: 18px!important;
+   }
+
+
+   .dropdown .submenu img.ms_drp_menu {
+     float: left;
+     margin-right:10px;
+     max-width:15px;
+   }
+
+
 
 
 
