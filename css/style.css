@@ -129,9 +129,16 @@ nav button.btn {
   color: #006aff;
 }
 
+/*........Stile Hamburger.............*/
 .navbar-header .fa-bars {
   font-size: 20px!important;
   color: #006aff;
+}
+/*........Stile freccia.............*/
+.fa-chevron-down{
+  font-size: 12px!important;
+  padding-left: 3px;
+  color: #7b88a2;
 }
 
 .navbar-toggle {
@@ -488,6 +495,11 @@ tbody{
 
 
 
+
+
+
+
+
 }
 
 
@@ -580,60 +592,71 @@ tbody{
    padding:30px 10%;
   }
 
-.dropdown-menu > li > a{
-   color: #006aff!important;
+  .dropdown-menu > li > a{
+     color: #006aff!important;
+   }
+
+
+ /* .........AGGIUNTE NAVBAR megadropdown........... */
+
+ .dropdown-menu > li > ul > li{
+   list-style: none!important;
+   padding-bottom: 20px;
+ }
+
+ /* ...Stile contenitori liste submenu.. */
+ .dropdown-menu ul.submenu > li > ul{
+   margin-left:0;
+   padding-left: 40px;
+ }
+
+ /* ...Stile del primo elemento della lista del submenu.. */
+ .dropdown-menu ul.submenu > li > ul >li:first-of-type{
+   margin-bottom:15px;
+ }
+
+ .dropdown-menu .submenu li{
+   list-style: none!important;
+   padding-left: 0;
  }
 
 
-  /* .........AGGIUNTE NAVBAR........... */
-
-  .dropdown-menu > li > ul > li{
-    list-style: none;
-    padding-bottom: 20px;
-  }
-
-
-  .dropdown-menu ul.submenu > li > ul{
-    margin-left:0;
-    padding-left: 20px;
-  }
-
-  .dropdown-menu .submenu  li{
-    list-style: none;
-    padding-left: 0;
-  }
+ .dropdown img.ms_drp_menu {
+   float: left!important;
+   margin-right:10px;
+   width:45px;
+ }
 
 
-  .dropdown img.ms_drp_menu {
-    float: left;
-    margin-right:10px;
-    width:45px;
-  }
+ .dropdown-menu h2.ms_drp_menu  {
+   font-size: 17px!important;
+   margin-top: 0;
+   font-weight: normal;
+ }
 
 
-  .dropdown-menu h2.ms_drp_menu  {
-    font-size: 19px!important;
-    margin-top: 0;
-  }
+ .dropdown-menu h3.ms_drp_menu {
+   font-size: 16px!important;
+   margin-top: 0;
+   margin-bottom: 2px;
+   font-weight: normal;
+
+ }
+
+ .dropdown-menu p.ms_drp_menu ,
+ .dropdown-menu .submenu .ms_link > li > a{
+  font-size: 15px!important;
+  font-weight: normal;
+ }
 
 
-  .dropdown-menu h3.ms_drp_menu {
-    font-size: 19px!important;
-    margin-top: 0;
-    margin-bottom: 2px;
+ .dropdown .submenu img.ms_drp_menu {
+  float: left!important;
+  margin-right:10px;
+  max-width:25px;
+ }
 
-  }
-
-  .dropdown-menu p.ms_drp_menu {
-     font-size: 18px!important;
-   }
-
-
-   .dropdown .submenu img.ms_drp_menu {
-     float: left;
-     margin-right:10px;
-     max-width:15px;
-   }
+ /* .........AGGIUNTE NAVBAR megadropdown........... */
 
 
 
