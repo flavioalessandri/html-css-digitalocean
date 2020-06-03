@@ -237,24 +237,25 @@ button>img{
 
 /*.......... Sezione 3 Carousel ...........................*/
 
-.ms_carousel_img img{
+#dev_carousel .ms_carousel_img img{
   padding-top: 60px;
   padding-bottom: 30px;
   width:80%;
   height:auto;
 }
 
-.ms_carousel_img i:first-of-type {
- font-size: 5em;
- color:rgba(3, 27, 78, 0.6);
- padding-right:40px;
-
+#team_carousel .ms_carousel_img img{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width:60%;
+  height:auto;
 }
 
-.ms_carousel_img i:last-of-type{
- font-size: 5em;
- color:#031b4e;
- padding-left:40px;
+
+
+.ms_carousel_img i:first-of-type,
+.ms_carousel_img i:last-of-type {
+  display: none!important;
 }
 
 
@@ -491,6 +492,20 @@ tbody{
 
   #customers > div >div:nth-of-type(2) >div > div:first-of-type{
     margin-left: 0px;
+  }
+
+  .ms_carousel_img i:first-of-type {
+    display: inline-block!important;
+    font-size: 4em;
+    color:rgba(3, 27, 78, 0.6);
+    padding-right:2%;
+  }
+
+  .ms_carousel_img i:last-of-type{
+    display: inline-block!important;
+    font-size: 4em;
+    color:#031b4e;
+    padding-left:2%;
   }
 
 
